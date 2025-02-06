@@ -67,7 +67,7 @@ const staticHtmlContent = `<!DOCTYPE html>
     <base target="_top">
     <?!= HtmlService.createHtmlOutputFromFile('index.css.html').getContent(); ?>
   </head>
-  <body>
+  <body class="container">
     <div id="root"></div>
     <?!= HtmlService.createHtmlOutputFromFile('index.js.html').getContent(); ?>
   </body>

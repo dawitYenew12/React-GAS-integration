@@ -7,6 +7,20 @@ function getSheetData() {
   return data.flat();
 }
 
+function openReactAppDialog() {
+  var template = HtmlService.createTemplateFromFile('index');
+  var htmlOutput = template.evaluate().setWidth(1000).setHeight(900);
+  SpreadsheetApp.getUi().showModalDialog(htmlOutput, 'React App');
+} 
+
+function onOpen() {
+  var ui = SpreadsheetApp.getUi();
+  // Add a new menu item called "React App"
+  ui.createMenu('Custom Menu')
+    .addItem('Open React App', 'openReactAppDialog')
+    .addToUi();
+}
+
 function doGet() {
   const template = HtmlService.createTemplateFromFile('index');
   return template.evaluate()
