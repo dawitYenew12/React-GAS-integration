@@ -18,6 +18,7 @@ This project demonstrates how to integrate a React app with Google Apps Script (
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/your-username/react-gas-integration.git
+```
 cd react-gas-integration
 
 ### 2. Install Dependencies
@@ -26,12 +27,12 @@ In your project folder, install the required npm packages:
 
 ```bash
 npm install
-
+```
 ### 3. deploy on apps script
 
 ```bash
 npm run deploy
-
+```
 ### Note
 3. Google Apps Script Setup
 
